@@ -1,0 +1,23 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <title>aldi sp2</title>
+    </head>
+    <body>
+        <script>
+            function hitungVolumeDanPermukaanBalok (panjang, lebar , tinggi){
+                volume = panjang * lebar * tinggi
+                luas = 2 *(panjang*lebar)+(panjang*tinggi)+(lebar*tinggi)
+                document.write("panjang: " + panjang + "<br/>")
+                document.write("lebar: " + lebar + "<br/>")
+                document.write("tinggi: " + tinggi + "<br/>")
+                document.write("luas permukaan balok:" + luas)
+            }
+            inputpanjang = prompt(" panjang")
+            inputlebar = prompt(" lebar ")
+            inputtinggi = prompt(" tinggi ")
+            hitungVolumeDanPermukaanBalok(inputpanjang, inputlebar ,inputtinggi)
+            </script>
+    </body>
+
+</html>
