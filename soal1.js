@@ -1,14 +1,11 @@
-function aldi (awal, akhir){
-for (y = awal; y < akhir; y++) {
-    for (x = awal; x < akhir; x++) {
-        if (x == 9 - (y - 1)) {
-            hasil=x*2-2
-            document.write(hasil)
-        } else {
-            document.write ('_')
-        }
+for(var y = 1; y < 10; y++){
+    for(var x = 1; x < 10; x++){
+        if(y==x || x==9 - (y-1) || x==8 || x==2 || y==8 || y==2){
+        document.write("*")
+    }else{
+        document.write("_")
     }
-    document.write('<br/>')
 }
+document.write("<br/>")
+
 }
-aldi(1,10)
